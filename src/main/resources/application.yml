@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: parking-lot-service
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/parking}
+    username: ${DB_USERNAME:parking}
+    password: ${DB_PASSWORD:parking}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate        # schema is owned by Flyway, Hibernate only verifies it
+    properties:
+      hibernate.jdbc.time_zone: ${PARKING_TIMEZONE:Asia/Kolkata}
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+parking:
+  timezone: ${PARKING_TIMEZONE:Asia/Kolkata}
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
