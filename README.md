@@ -288,10 +288,10 @@ This project demonstrates practical backend development concepts, including REST
 
 ## Author
 
-**Your Name**
+**Divya Sontakke**
 
-GitHub: [Your GitHub Profile](https://github.com/)
+GitHub: https://github.com/divyasontakke
 
 ---
 
-**License:** Add an appropriate open-source license before distributing this project.
+
